@@ -6,9 +6,9 @@ https://github.com/user-attachments/assets/e2755b62-ae27-40a5-8a99-ed024df53ffe
 
 ## Steps to reproduce bug:
 1. Open Chrome DevTools → Network → throttle to 3G.
-2. Visit the first LiveView.
-3. Click to navigate to the second LiveView.
-4. Before it finishes mounting, attempt to increase count on initial liveview.
+2. Visit the Counter LiveView.
+3. Click to navigate to the Counter2 LiveView.
+4. Before it finishes mounting, attempt to increase count on initial counter LiveView.
 5. Observe that the server logs errors for events that belong to the old view.
 
 To start your Phoenix server:
