@@ -5,9 +5,11 @@
 https://github.com/user-attachments/assets/e2755b62-ae27-40a5-8a99-ed024df53ffe
 
 ## Steps to reproduce bug:
-1. Increase the network latency on your page
-2. Switch to the second live view and while it is loading, continue to attempt to increase the counter
-3. Notice the error message in the terminal about being inable to find the route
+1. Open Chrome DevTools → Network → throttle to 3G.
+2. Visit the first LiveView.
+3. Click to navigate to the second LiveView.
+4. Before it finishes mounting, attempt to increase count on initial liveview.
+5. Observe that the server logs errors for events that belong to the old view.
 
 To start your Phoenix server:
 
